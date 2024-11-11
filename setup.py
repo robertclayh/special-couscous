@@ -1,12 +1,12 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
-    name='Demo',
-    version='0.1',
-    description='A simple demonstration package',
-    url='https://github.com/robertclayh/special-couscous',
-    author='R.C. Harris',
-    author_email='jbm2rt@virginia.edu',
-    license='Apache',
-    packages=['demo']
+    name="booklover",
+    version="0.1",
+    packages=find_packages(),
+    install_requires=[],
+    author="Robert Clay Harris",
+    author_email="jbm2rt@virginia.edu",
+    description="A package for HW09 assignment",
+    url="https://github.com/robertclayh/special-couscous",
 )
