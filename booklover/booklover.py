@@ -9,7 +9,7 @@ class BookLover:
         self.book_list = book_list if book_list is not None else pd.DataFrame({'book_name': [], 'book_rating': []})
 
     def add_book(self, book_name, rating):
-        if book_name not in self.book_list['book_name'].values:
+        if not (self.book_list['book_name'] == book_name).any():
             new_book = pd.DataFrame({
                 'book_name': [book_name],
                 'book_rating': [rating]
